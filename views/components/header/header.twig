@@ -1,0 +1,24 @@
+<header class="header headroom" >
+	<div class="container">
+		<div class="header__wrapper">
+			<h1 class="hdr-logo" role="banner">
+				<a class="hdr-logo-link" href="{{site.url}}" rel="home">TKTK</a>
+			</h1>
+			<nav id="nav-main" class="nav-main" role="navigation">
+				<ul class="header__nav">
+					<li>
+						<a class="header__nav-link" href="/components/">Components</a>
+					</li>
+					<li>
+						<a class="header__nav-link" href="/documentation/">Documentation</a>
+					</li>
+					<li>
+						<a class="header__nav-link" href="/about/">About</a>
+					</li>
+				</ul>
+				{% include "menu.twig" with {'items': menu.get_items} %}
+			</nav><!-- #nav -->
+		</div>
+	</div>
+	<div id="progress-bar"></div>
+</header>

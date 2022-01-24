@@ -1,0 +1,31 @@
+# WP Specific Folders
+wp-includes/
+wp-admin/
+wp-content/uploads/
+wp-content/plugins/
+
+# WP Specific Files
+wp-activate.php
+wp-blog-header.php
+wp-comments-post.php
+wp-cron.php
+wp-links-opml.php
+wp-load.php
+wp-login.php
+wp-mail.php
+wp-settings.php
+wp-signup.php
+wp-trackback.php
+xmlrpc.php
+wp-config.php
+license.txt
+wp-config-sample.php
+index.txt
+index.php
+*.log
+
+# System Specific
+.DS_Store
+
+# Theme Specific
+node_modules

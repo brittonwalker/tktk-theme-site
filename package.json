@@ -1,0 +1,43 @@
+{
+  "name": "wp-starter-theme",
+  "version": "1.0.0",
+  "description": "<!DOCTYPE html> <html lang=\"en\"> <head> \t<meta name=\"viewport\" content=\"width=device-width\" /> \t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /> \t<title>WordPress &#8250; ReadMe</title> \t<link rel=\"stylesheet\" href=\"wp-admin/css/install.css?ver=20100228\" type=\"text/css\" /> </head> <body> <h1 id=\"logo\"> \t<a href=\"https://wordpress.org/\"><img alt=\"WordPress\" src=\"wp-admin/images/wordpress-logo.png\" /></a> </h1> <p style=\"text-align: center\">Semantic Personal Publishing Platform</p>",
+  "main": "index.js",
+  "scripts": {
+    "build": "wp-scripts build",
+    "check-engines": "wp-scripts check-engines",
+    "check-licenses": "wp-scripts check-licenses",
+    "format": "wp-scripts format",
+    "lint:css": "wp-scripts lint-style",
+    "lint:js": "wp-scripts lint-js",
+    "lint:md:docs": "wp-scripts lint-md-docs",
+    "lint:md:js": "wp-scripts lint-md-js",
+    "lint:pkg-json": "wp-scripts lint-pkg-json",
+    "packages-update": "wp-scripts packages-update",
+    "start": "wp-scripts start",
+    "test:e2e": "wp-scripts test-e2e",
+    "test:unit": "wp-scripts test-unit-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brittonwalker/wp-starter-theme.git"
+  },
+  "keywords": [
+    "wordpress"
+  ],
+  "author": "Britton Walker",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brittonwalker/wp-starter-theme/issues"
+  },
+  "homepage": "https://github.com/brittonwalker/wp-starter-theme#readme",
+  "devDependencies": {
+    "@wordpress/scripts": "^19.2.3",
+    "headroom.js": "^0.12.0",
+    "prismjs": "^1.26.0",
+    "tailwindcss": "^3.0.15"
+  },
+  "dependencies": {
+    "swiper": "^7.4.1"
+  }
+}

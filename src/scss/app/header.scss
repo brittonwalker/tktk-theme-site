@@ -1,0 +1,31 @@
+.admin-bar {
+    .headroom {
+        top: 32px;
+    }
+}
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+	@apply fixed w-full py-4 bg-black text-white z-10 top-0;
+}
+.headroom--pinned {
+    transform: translateY(0%);
+}
+.headroom--unpinned {
+    transform: translateY(-100%);
+}
+
+.header {
+    &__wrapper {
+        @apply flex justify-between;
+    }
+    &__nav {
+        @apply flex;
+    }
+    &__nav-link {
+        @apply px-4;
+        &:last-of-type {
+            @apply pr-0;
+        }
+    }
+}

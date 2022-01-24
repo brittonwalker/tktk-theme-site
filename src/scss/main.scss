@@ -1,0 +1,24 @@
+// Tailwind Styles
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Vendor
+@import 'swiper/css/bundle';
+@import 'prismjs/themes/prism.min.css';
+@import 'prismjs/themes/prism-okaidia.min.css';
+
+// Application Styles
+@import './app/post-tease.scss';
+@import './app/header.scss';
+@import './app/footer.scss';
+@import './app/hero-split.scss';
+@import './app/slideshow.scss';
+@import './app/buttons.scss';
+@import './app/post-grid.scss';
+@import './app/modal.scss';
+@import './app/banner.scss';
+@import './app/container.scss';
+@import './app/article.scss';
+@import './app/toggle-switch.scss';
+@import './app/code-block.scss';

@@ -1,0 +1,17 @@
+.slideshow {
+	@apply mb-14 overflow-hidden;
+
+	.swiper-slide {
+		max-width: fit-content;
+		@apply rounded-3xl overflow-hidden;
+		&:hover {
+			cursor: grab;
+		}
+		img {
+			max-height: 600px;
+		}
+	}
+	.swiper {
+		@apply overflow-visible;
+	}
+}
