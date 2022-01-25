@@ -1,0 +1,6 @@
+.drawer {
+	@apply fixed bg-white border border-black h-screen w-[20vw] top-0 left-[100%] z-20 transition-all duration-300 p-4;
+	&.active {
+		transform: translateX(-100%);
+	}
+}

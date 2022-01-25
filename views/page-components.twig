@@ -3,7 +3,7 @@
 {% block content %}
 	<div class="components-header my-12">
 		<div class="container bg-black text-white rounded-3xl overflow-hidden">
-			<div class="grid grid-cols-1 py-24">
+			<div class="grid grid-cols-1 py-12 lg:py-24 lg:min-h-[600px]">
 				<div class="flex justify-center items-center">
 					<div class="text-content text-center">
 						<h1 class="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl">Welcome to TKTK components</h1>
@@ -21,4 +21,8 @@
 	{% include 'components/slideshow/code.twig' %}
 	{% include 'components/section/title.twig' with { title: 'Post Tease' } %}
 	{% include 'components/tease/code.twig' %}
+	{% include 'components/section/title.twig' with { title: 'Drawer' } %}
+	{% include 'components/drawer/code.twig' %}
+	{% include 'components/section/title.twig' with { title: 'Toast' } %}
+	{% include 'components/toast/code.twig' %}
 {% endblock %}

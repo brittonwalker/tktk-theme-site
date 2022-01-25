@@ -1,0 +1,6 @@
+.toast {
+	@apply fixed bg-white border border-black w-full top-[100%] left-0 z-20 transition-all duration-300 p-4;
+	&.active {
+		transform: translateY(-100%);
+	}
+}
