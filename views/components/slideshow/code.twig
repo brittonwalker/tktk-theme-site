@@ -6,39 +6,13 @@
 	<div class="code-block__container code-block__hidden">
 		<div class="code-block__wrapper">
 			<div class="code-block__highlight">
-				<div class="code-block__btn js-lang-tab active" data-lang-btn="markup">HTML</div>
+				<div class="code-block__btn js-lang-tab active" data-lang-btn="twig">HTML</div>
 				<div class="code-block__btn js-lang-tab" data-lang-btn="scss">SCSS</div>
 				<div class="code-block__btn js-lang-tab" data-lang-btn="js">JS</div>
 				<button type="button" name="copy code to clipboard" class="code-block__btn js-copy-btn">Copy</button>
 			</div>
-			<pre class="active" data-lang="markup">
-				<code class="language-markup">
-					{{ '<div class="slideshow">
-						<div class="container">
-							<div class="swiper">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<img src="https://source.unsplash.com/1600x900" alt="">
-									</div>
-									<div class="swiper-slide">
-										<img src="https://source.unsplash.com/1600x900" alt="">
-									</div>
-									<div class="swiper-slide">
-										<img src="https://source.unsplash.com/1600x900" alt="">
-									</div>
-									<div class="swiper-slide">
-										<img src="https://source.unsplash.com/1600x900" alt="">
-									</div>
-									<div class="swiper-slide">
-										<img src="https://source.unsplash.com/1600x900" alt="">
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>'|e('esc_html') }}
-				</code>
-			</pre>
 		</div>
+		<pre class="active" data-lang="twig"><code class="language-twig">{% filter escape %}{% include 'components/slideshow/slideshow.twig' %}{% endfilter %}</code></pre>
 		<pre data-lang="js" data-src="{{ theme.link }}/src/js/app/Slideshows.js"></pre>
 		<pre data-lang="scss" data-src="{{ theme.link }}/src/scss/app/slideshow.scss"></pre>
 	</div>
