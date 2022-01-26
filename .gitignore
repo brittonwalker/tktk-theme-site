@@ -21,7 +21,6 @@ wp-config.php
 license.txt
 wp-config-sample.php
 index.txt
-index.php
 *.log
 
 # System Specific
