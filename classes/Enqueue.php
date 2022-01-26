@@ -88,7 +88,7 @@ class Enqueue {
 		} else {
 			wp_enqueue_script(
 				$this->namespace,
-				get_theme_file_uri( '/build/editor.min.js' ),
+				get_theme_file_uri( '/build/editor.js' ),
 				array(
 					'jquery',
 				),
@@ -113,7 +113,7 @@ class Enqueue {
 		} else {
 			wp_enqueue_style(
 				$this->namespace,
-				get_theme_file_uri( '/build/index.min.css' ),
+				get_theme_file_uri( '/build/index.css' ),
 				false,
 				$this->version,
 				'screen, print'
@@ -139,7 +139,7 @@ class Enqueue {
 		} else {
 			wp_enqueue_script(
 				$this->namespace,
-				get_theme_file_uri( '/build/index.min.js' ),
+				get_theme_file_uri( '/build/index.js' ),
 				array(
 					'jquery',
 				),
