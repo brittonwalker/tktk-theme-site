@@ -1,4 +1,4 @@
-import Prism from 'prismjs';
+import 'prismjs';
 import 'prismjs/components/prism-css';
 import 'prismjs/components/prism-css-extras';
 import 'prismjs/components/prism-scss';

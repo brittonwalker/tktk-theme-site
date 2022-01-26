@@ -36,6 +36,7 @@ class Enqueue {
 		add_action( 'admin_enqueue_scripts', array( $this, 'admin_styles' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'site_styles' ) );
 		add_action( 'wp_enqueue_scripts', array( $this, 'site_scripts' ) );
+		add_action( 'enqueue_block_editor_assets', array( $this, 'editor_scripts' ) );
 
 	}
 
@@ -67,6 +68,34 @@ class Enqueue {
 			'screen'
 		);
 
+	}
+
+	/**
+	 * Editor Scripts
+	 */
+	public function editor_scripts() {
+
+		if ( $this->is_development() ) {
+			wp_enqueue_script(
+				$this->namespace,
+				get_theme_file_uri( '/build/editor.js' ),
+				array(
+					'jquery',
+				),
+				false,
+				true
+			);
+		} else {
+			wp_enqueue_script(
+				$this->namespace,
+				get_theme_file_uri( '/build/editor.min.js' ),
+				array(
+					'jquery',
+				),
+				false,
+				true
+			);
+		}
 	}
 
 	/**
