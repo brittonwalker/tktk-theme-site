@@ -2,7 +2,7 @@
  * CodeTabs.js
  */
 
- class CodeTabs {
+class CodeTabs {
 	constructor() {
 		this.codeBlocks = document.querySelectorAll('.code-block');
 		this.copied = false;
