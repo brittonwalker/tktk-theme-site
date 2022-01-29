@@ -4,7 +4,7 @@
 		@apply flex flex-col;
 	}
 	&__title {
-		@apply mb-4;
+		@apply mb-4 text-gray-900 text-xl font-medium mb-2;
 	}
 	&__img {
 
