@@ -1,7 +1,7 @@
 <div class="code-block">
-	{% include 'components/code-block/header.twig' with { title: 'Left Aligned' } %}
+	{% include 'components/code-block/header.twig' with { title: 'Centered' } %}
 	<div class="code-block__preview">
-		{% include 'components/slideshow/slideshow.twig' %}
+		{% include 'components/slideshow/centered/slideshow.twig' %}
 	</div>
 	<div class="code-block__container code-block__hidden">
 		<div class="code-block__wrapper">
@@ -12,7 +12,7 @@
 				<button type="button" name="copy code to clipboard" class="code-block__btn js-copy-btn">Copy</button>
 			</div>
 		</div>
-		<pre class="active" data-lang="twig"><code class="language-twig">{% filter escape %}{% include 'components/slideshow/slideshow.twig' %}{% endfilter %}</code></pre>
+		<pre class="active" data-lang="twig"><code class="language-twig">{% filter escape %}{% include 'components/slideshow/centered/slideshow.twig' %}{% endfilter %}</code></pre>
 		<pre data-lang="js" data-src="{{ theme.link }}/src/js/app/Slideshows.js"></pre>
 		<pre data-lang="scss" data-src="{{ theme.link }}/src/scss/app/slideshow.scss"></pre>
 	</div>

@@ -1,17 +1,43 @@
 .slideshow {
 	@apply mb-14 overflow-hidden;
+	--slide-height: 600px;
+	--slide-width: fit-content;
+
+	&[data-slideshow-type="centered"] {
+		--slide-height: auto;
+		--slide-width: 100%;
+	}
 
 	.swiper-slide {
-		max-width: fit-content;
+		max-width: var(--slide-width);
 		@apply rounded-3xl overflow-hidden;
 		&:hover {
 			cursor: grab;
 		}
 		img {
-			max-height: 600px;
+			max-height: var(--slide-height);
 		}
 	}
 	.swiper {
 		@apply overflow-visible;
+	}
+	.swiper-controls {
+		@apply flex justify-center mt-4;
+		&__wrapper {
+			@apply flex items-center;
+		}
+	}
+	.swiper-pagination-bullet-active {
+		@apply bg-black;
+	}
+	.swiper-pagination {
+		@apply static flex mx-6;
+	}
+	.swiper-button-prev,
+	.swiper-button-next {
+		@apply static mt-0 text-black;
+		&:after {
+			@apply hidden;
+		}
 	}
 }
