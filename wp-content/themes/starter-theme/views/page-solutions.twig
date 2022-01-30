@@ -1,0 +1,17 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="components-header my-12">
+		<div class="container bg-black text-white rounded-3xl overflow-hidden">
+			<div class="grid grid-cols-1 py-12 lg:py-24 lg:min-h-[600px]">
+				<div class="flex justify-center items-center">
+					<div class="text-content text-center">
+						<h1 class="text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl">Welcome to TKTK Solutions</h1>
+						<p class="mt-3 text-base sm:mt-5 sm:text-lg sm:mx-auto md:mt-5 md:text-xl lg:mx-0">These are running list solutions for common site experiences.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% include 'components/section/title.twig' with { title: 'Heros' } %}
+{% endblock %}
