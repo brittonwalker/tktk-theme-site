@@ -1,13 +1,30 @@
-# WP Specific Folders
-wp-includes/
-wp-admin/
-wp-content/uploads/
-wp-content/plugins/
+*~
+.DS_Store
+.svn
+.cvs
+.htaccess
+.vagrant
+*.bak
+*.swp
+*.xml
+Thumbs.db
 
-# WP Specific Files
+# cpanel
+.cpanel.yml
+
+# wordpress specific
+wp-config.php
+wp-content/uploads/
+wp-content/blogs.dir/
+wp-content/upgrade/*
+wp-content/backup-db/*
+wp-content/advanced-cache.php
+wp-content/wp-cache-config.php
+wp-content/cache/*
+wp-content/cache/supercache/*
 wp-activate.php
 wp-blog-header.php
-wp-comments-post.php
+wp-comments.php
 wp-cron.php
 wp-links-opml.php
 wp-load.php
@@ -17,14 +34,55 @@ wp-settings.php
 wp-signup.php
 wp-trackback.php
 xmlrpc.php
-wp-config.php
-license.txt
+license.text
+/wp-admin/
+/wp-includes/
+wp-comments-post.php
 wp-config-sample.php
-index.txt
-*.log
+index.php
+readme.html
+license.txt
+debug.log
 
-# System Specific
-.DS_Store
+#Composer
+composer.lock
+/vendor/
 
-# Theme Specific
-node_modules
+#Build
+wp-content/themes/starter-theme/node_modules/
+!wp-content/themes/starter-theme/index.php
+
+# large/disallowed file types
+# a CDN should be used for these
+*.hqx
+*.bin
+*.exe
+*.dll
+*.deb
+*.dmg
+*.iso
+*.img
+*.msi
+*.msp
+*.msm
+*.mid
+*.midi
+*.kar
+*.mp3
+*.ogg
+*.m4a
+*.ra
+*.3gpp
+*.3gp
+*.mp4
+*.mpeg
+*.mpg
+*.mov
+*.webm
+*.flv
+*.m4v
+*.mng
+*.asx
+*.asf
+*.wmv
+*.avi
