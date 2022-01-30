@@ -15,3 +15,4 @@ import './app/ProgressBar';
 import './app/Drawer';
 import './app/Toast';
 import './app/Accordion';
+import './app/Video';

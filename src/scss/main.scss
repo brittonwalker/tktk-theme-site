@@ -7,6 +7,7 @@
 @import 'swiper/css/bundle';
 @import 'prismjs/themes/prism.min.css';
 @import 'prismjs/themes/prism-okaidia.min.css';
+@import 'plyr';
 
 // Application Styles
 @import './app/post-tease.scss';
@@ -27,3 +28,4 @@
 @import './app/drawer.scss';
 @import './app/toast.scss';
 @import './app/accordion.scss';
+@import './app/video.scss';
