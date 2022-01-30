@@ -1,7 +1,7 @@
 <div class="code-block">
-	{% include 'components/code-block/header.twig' with { title: 'Drawer' } %}
+	{% include 'components/code-block/header.twig' with { title: 'Accordion' } %}
 	<div class="code-block__preview">
-		{% include 'components/drawer/drawer.twig' %}
+		{% include 'components/banner/banner.twig' %}
 	</div>
 	<div class="code-block__container code-block__hidden">
 		<div class="code-block__wrapper">
@@ -12,8 +12,8 @@
 				<button type="button" name="copy code to clipboard" class="code-block__btn js-copy-btn">Copy</button>
 			</div>
 		</div>
-		<pre class="active" data-lang="markup"><code class="language-twig">{{ source('components/drawer/drawer.twig')|raw|e('esc_html') }}</code></pre>
-		<pre data-lang="scss" data-src="{{ theme.link }}/src/scss/app/drawer.scss"></pre>
-		<pre data-lang="js" data-src="{{ theme.link }}/src/js/app/Drawer.js"></pre>
+		<pre class="active" data-lang="markup"><code class="language-twig">{{ source('components/banner/banner.twig')|raw|e('esc_html') }}</code></pre>
+		<pre data-lang="scss" data-src="{{ theme.link }}/src/scss/app/banner.scss"></pre>
+		<pre data-lang="js" data-src="{{ theme.link }}/src/js/app/Banner.js"></pre>
 	</div>
 </div>
