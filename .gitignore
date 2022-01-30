@@ -46,6 +46,9 @@ debug.log
 
 #Build
 wp-content/themes/starter-theme/node_modules/
+wp-content/themes/starter-theme/build/editor.js.map
+wp-content/themes/starter-theme/build/index.js.map
+wp-content/themes/starter-theme/build/index.css.map
 !wp-content/themes/starter-theme/index.php
 
 # large/disallowed file types
