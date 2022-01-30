@@ -1,0 +1,24 @@
+<div class="slideshow">
+	<div class="container">
+		<div class="swiper">
+			<div class="swiper-wrapper">
+				{% for item in 1..5 %}
+					<div class="swiper-slide">
+						<img src="https://source.unsplash.com/1600x900" alt="">
+					</div>
+				{% endfor %}
+			</div>
+		</div>
+		<div class="swiper-controls">
+			<div class="swiper-controls__wrapper">
+				<div class="swiper-button-prev">
+					{% include 'svg/arrow-left.twig' %}
+				</div>
+				<div class="swiper-pagination"></div>
+				<div class="swiper-button-next">
+					{% include 'svg/arrow-right.twig' %}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
