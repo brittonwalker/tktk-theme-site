@@ -1,7 +1,7 @@
 <div class="code-block">
 	{% include 'components/code-block/header.twig' with { title: 'Hero Split' } %}
 	<div class="code-block__preview">
-		{% include 'components/hero/hero-split.twig' %}
+		{% include 'components/hero/split/hero-split.twig' %}
 	</div>
 	<div class="code-block__container code-block__hidden">
 		<div class="code-block__wrapper">
@@ -11,7 +11,7 @@
 				<button type="button" name="copy code to clipboard" class="code-block__btn js-copy-btn">Copy</button>
 			</div>
 		</div>
-		<pre class="active" data-lang="markup"><code class="language-markup">{% filter escape %}{% include 'components/hero/hero-split.twig' %}{% endfilter %}</code></pre>
+		<pre class="active" data-lang="markup"><code class="language-twig">{{ source('components/hero/split/hero-split.twig')|raw|e('esc_html') }}</code></pre>
 		<pre data-lang="scss" data-src="{{ theme.link }}/src/scss/app/hero-split.scss"></pre>
 	</div>
 </div>
