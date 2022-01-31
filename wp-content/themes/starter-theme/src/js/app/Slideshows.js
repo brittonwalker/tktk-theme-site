@@ -31,7 +31,7 @@ const CONFIGS = [
 		config: CENTER_CONFIG ,
 	},
 ]
-class Slideshow {
+export default class Slideshow {
 	constructor() {
 		this.slideshows = [...document.querySelectorAll('.slideshow')];
 		if (!this.slideshows.length) return;
@@ -62,5 +62,3 @@ class Slideshow {
 		return config;
 	}
 }
-
-new Slideshow();

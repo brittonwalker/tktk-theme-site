@@ -2,7 +2,7 @@
  * CodeTabs.js
  */
 
-class CodeTabs {
+export default class CodeTabs {
 	constructor() {
 		this.codeBlocks = document.querySelectorAll('.code-block');
 		this.copied = false;
@@ -79,4 +79,3 @@ class CodeTabs {
 		}
 	}
 }
-new CodeTabs();

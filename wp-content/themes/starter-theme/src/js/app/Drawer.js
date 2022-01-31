@@ -2,8 +2,7 @@
  * Drawer.js
  */
 
-
-class Drawer {
+export default class Drawer {
 	constructor() {
 		this.trigger = document.querySelector('.js-drawer-trigger');
 		this.drawer = document.querySelector('.drawer');
@@ -21,4 +20,3 @@ class Drawer {
 		}
 	}
 }
-new Drawer();

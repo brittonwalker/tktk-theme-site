@@ -2,8 +2,7 @@
  * ProgressBar.js
  */
 
-
-class ProgressBar {
+export default class ProgressBar {
 	constructor() {
 		this.progressBar = document.getElementById('progress-bar');
 		this.scrollPercent = 0;
@@ -27,4 +26,3 @@ class ProgressBar {
 		}
 	}
 }
-new ProgressBar();

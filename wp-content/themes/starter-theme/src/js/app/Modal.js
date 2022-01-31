@@ -2,8 +2,7 @@
 * Modal.js
 */
 
-
-class Modal {
+export default class Modal {
 	constructor() {
 		this.els = [...document.querySelectorAll('[data-modal-trigger]')];
 
@@ -30,4 +29,3 @@ class Modal {
 		document.body.classList.add('js-modal-open');
 	}
 }
-new Modal();

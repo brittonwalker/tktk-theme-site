@@ -9,7 +9,7 @@ const DEFAULT_CONFIG = {
 	storage: false,
 }
 
-class Video {
+export default class Video {
 	constructor() {
 		this.players = document.querySelectorAll('.video-player')
 		if (!this.players) return;
@@ -24,7 +24,6 @@ class Video {
 	}
 	getConfig(el) {
 		const isBackground = el.classList.contains('js-is-background');
-		console.log(isBackground)
 		const newConfig = {
 			...DEFAULT_CONFIG,
 			muted: isBackground,
@@ -42,4 +41,3 @@ class Video {
 		return newConfig;
 	}
 }
-new Video();

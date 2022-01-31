@@ -7,7 +7,7 @@ const ACCORDION_ITEM_CLASS = '.accordion__item';
 const ACCORDION_BODY_CLASS = '.accordion__collapse';
 const COLLAPSED_CLASS = 'collapsed';
 
-class Accordions {
+export default class Accordions {
 	constructor() {
 		this.accordions = [...document.querySelectorAll('.accordion')];
 		if (!this.accordions) return;
@@ -19,7 +19,6 @@ class Accordions {
 		})
 	}
 	buildAccordion(element) {
-		console.log(element)
 		const items = [...element.querySelectorAll(ACCORDION_ITEM_CLASS)];
 		items.forEach((item) => {
 			const arccordionItem = {
@@ -42,4 +41,3 @@ class Accordions {
 		}
 	}
 }
-new Accordions();

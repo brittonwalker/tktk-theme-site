@@ -2,8 +2,7 @@
  * Banner.js
  */
 
-
- class Banner {
+export default class Banner {
 	constructor() {
 		this.banners = [...document.querySelectorAll('.banner')];
 		if (!this.banners) {
@@ -23,4 +22,3 @@
 		el.removeAttribute('style');
 	}
 }
-new Banner();

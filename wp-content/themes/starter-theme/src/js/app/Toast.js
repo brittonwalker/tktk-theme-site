@@ -2,8 +2,7 @@
  * Toast.js
  */
 
-
- class Toast {
+export default class Toast {
 	constructor() {
 		this.trigger = document.querySelector('.js-toast-trigger');
 		this.toast = document.querySelector('.toast');
@@ -21,4 +20,3 @@
 		}
 	}
 }
-new Toast();
