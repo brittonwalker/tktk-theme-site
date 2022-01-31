@@ -1,0 +1,22 @@
+.docs {
+	@apply text-lg;
+	p {
+		@apply my-4;
+		code {
+			color: rgb(212, 0, 255);
+			font-size: 0.9em;
+			white-space: pre-wrap;
+			-webkit-transition: color 0.2s ease;
+			transition: color 0.2s ease;
+		}
+	}
+	ul {
+		@apply list-inside;
+		li {
+			@apply list-disc;
+		}
+	}
+	h2 {
+		@apply text-2xl font-bold mt-7 mb-4;
+	}
+}

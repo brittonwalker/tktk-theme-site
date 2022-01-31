@@ -30,3 +30,6 @@ require_once( __DIR__ . '/classes/Enqueue.php' );
 
 // Add to Timber $context to be used throughout the site
 require_once( __DIR__ . '/classes/TimberContext.php' );
+
+// Add to CPTs
+require_once( __DIR__ . '/functions/custom-post-types.php' );
