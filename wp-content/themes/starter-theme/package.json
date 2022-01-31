@@ -33,12 +33,14 @@
   "homepage": "https://github.com/brittonwalker/wp-starter-theme#readme",
   "devDependencies": {
     "@wordpress/scripts": "^19.2.3",
+    "gsap": "^3.9.1",
     "headroom.js": "^0.12.0",
     "plyr": "^3.6.12",
     "prismjs": "^1.26.0",
     "tailwindcss": "^3.0.15"
   },
   "dependencies": {
+    "@barba/core": "^2.9.7",
     "swiper": "^7.4.1"
   }
 }
