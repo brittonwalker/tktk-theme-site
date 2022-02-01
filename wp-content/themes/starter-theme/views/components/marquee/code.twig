@@ -1,0 +1,17 @@
+<div class="code-block">
+	{% include 'components/code-block/header.twig' with { title: 'Marquee (CSS only)' } %}
+	<div class="code-block__preview">
+		{% include 'components/marquee/marquee.twig' %}
+	</div>
+	<div class="code-block__container code-block__hidden">
+		<div class="code-block__wrapper">
+			<div class="code-block__highlight">
+				<div class="code-block__btn js-lang-tab active" data-lang-btn="markup">HTML</div>
+				<div class="code-block__btn js-lang-tab" data-lang-btn="scss">SCSS</div>
+				<button type="button" name="copy code to clipboard" class="code-block__btn js-copy-btn">Copy</button>
+			</div>
+		</div>
+		<pre class="active" data-lang="markup"><code class="language-twig">{{ source('components/marquee/marquee.twig')|raw|e('esc_html') }}</code></pre>
+		<pre data-lang="scss" data-src="{{ theme.link }}/src/scss/app/marquee.scss"></pre>
+	</div>
+</div>
