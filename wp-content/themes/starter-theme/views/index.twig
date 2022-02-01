@@ -3,12 +3,10 @@
 {% block content %}
 	{% include 'components/hero/split/hero-split.twig' %}
 	{% include 'components/slideshow/left/slideshow.twig' %}
-	{% include 'components/tease/post-grid.twig' with { columns: 2 } %}
 	{% include 'components/tease/post-grid.twig' with { columns: 3 } %}
-	{% include 'components/tease/post-grid.twig' with { columns: 4 } %}
-	{% for post in posts %}
+	{# {% for post in posts %}
 		{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
 	{% endfor %}
 	
-	{% include 'partial/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %}
+	{% include 'partial/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %} #}
 {% endblock %}
