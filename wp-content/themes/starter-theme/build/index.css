@@ -1060,6 +1060,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}.video-player{
+  overflow: hidden;
 }.docs{
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -1076,7 +1078,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 700;
-}.hover\:bg-gray-100:hover{
+}.to-reveal{opacity:0;transition:opacity .5s ease,transform 1s cubic-bezier(0.1, 0.6, 0.4, 1)}.to-reveal.__revealed{opacity:1}.hover\:bg-gray-100:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }.hover\:bg-gray-50:hover{
