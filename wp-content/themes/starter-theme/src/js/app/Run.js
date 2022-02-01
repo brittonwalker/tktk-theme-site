@@ -13,6 +13,7 @@ import Toast from './Toast';
 import Accordions from './Accordion';
 import Video from './Video';
 import CodeHighlight from './CodeHighlight';
+import ScrollAnimations from './ScrollAnimation';
 
 export default class Run {
 	constructor() {
@@ -29,5 +30,6 @@ export default class Run {
 		new ProgressBar();
 		new Banner();
 		new Modal();
+		new ScrollAnimations();
 	}
 }
