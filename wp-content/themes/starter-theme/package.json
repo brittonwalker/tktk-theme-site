@@ -41,6 +41,7 @@
   },
   "dependencies": {
     "@barba/core": "^2.9.7",
+    "split-type": "^0.2.5",
     "swiper": "^7.4.1"
   }
 }
