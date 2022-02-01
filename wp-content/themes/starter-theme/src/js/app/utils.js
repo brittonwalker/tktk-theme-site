@@ -41,4 +41,19 @@ const setViewportUnit = () => {
 	document.documentElement.style.setProperty('--vh', `${vh}px`);
 };
 
-export { isInViewport, isVisible, triggerTransitionEnd, isElement, setViewportUnit };
+// wrap each element of an array
+// elems - the array of elements to wrap
+// wrapType - type of wrapper ('div', 'span' etc)
+// wrapClass - wrapper class(s) 
+const wrapLines = (elems, wrapType, wrapClass) => {
+	console.log(elems)
+    elems.forEach(char => {
+        // add a wrap for every char (overflow hidden)
+        const wrapEl = document.createElement(wrapType);
+        wrapEl.classList = wrapClass;
+        char.parentNode.appendChild(wrapEl);
+        wrapEl.appendChild(char);
+    });
+}
+
+export { isInViewport, isVisible, triggerTransitionEnd, isElement, setViewportUnit, wrapLines };
