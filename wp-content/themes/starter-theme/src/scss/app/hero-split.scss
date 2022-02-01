@@ -18,4 +18,7 @@
 			@apply order-2 lg:order-2;
 		}
 	}
+	&__heading {
+		@apply text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl;
+	}
 }
