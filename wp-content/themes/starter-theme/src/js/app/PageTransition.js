@@ -35,14 +35,12 @@ class PageTransition {
 		
 				enter(data) {
 					const { trigger } = data;
-		
-					console.log('hello')
 
 					return gsap.fromTo(data.next.container, {
 						opacity: 0
 					}, {
 						opacity: 1
-					});
+					}, .3);
 				},
 		
 				after: (data) => {
