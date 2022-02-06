@@ -1,13 +1,10 @@
 module.exports = {
   mode: 'jit',
-  purge: {
-    content: [
-      './views/*.twig',
-      './views/**/*.twig',
-      './svg/**/*.twig',
-    ],
-  },
-  content: [],
+  content: [
+    './views/*.twig',
+    './views/**/*.twig',
+    './svg/**/*.twig',
+  ],
   theme: {
     extend: {},
     container: {
