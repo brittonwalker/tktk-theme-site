@@ -11,12 +11,17 @@ export default class PageElevator {
 		this.init();
 	}
 	init() {
+		this.setArrowPosition();
+		window.addEventListener('scroll', () => this.onScroll() );
+		window.addEventListener('resize', () => this.setArrowPosition() );
+		this.el.addEventListener('click', () => this.scrollToTop());
+	}
+	setArrowPosition() {
+		console.log('setting')
 		const container = document.querySelector('.container');
 		const { right } = container.getBoundingClientRect()
 		const { width }= this.el.getBoundingClientRect();
 		gsap.set(this.el, { position: 'fixed', bottom: '48px', left: right - width, zIndex: 50, opacity: 0 })
-		window.addEventListener('scroll', () => this.onScroll() );
-		this.el.addEventListener('click', () => this.scrollToTop());
 	}
 	onScroll() {
 		if (scrollY > 800) {
