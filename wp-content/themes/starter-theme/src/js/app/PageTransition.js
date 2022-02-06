@@ -4,10 +4,12 @@
 
 import barba from '@barba/core';
 import Run from './Run';
-import { gsap, Sine } from 'gsap';
+import { gsap, Power2 } from 'gsap';
 
 class PageTransition {
 	constructor() {
+		this.transitionEl = document.querySelector('.page-transition');
+		this.text = this.transitionEl.querySelector('.page-transition__loading');
 		document.addEventListener('DOMContentLoaded', () => this.init());
 	}
 	init() {
@@ -21,56 +23,38 @@ class PageTransition {
 			},
 			transitions: [{
 				name: 'default-transition',
-				before(data) {
+				leave: (data) => {
 					const { trigger, current } = data;
 					const { container } = current;
+
+					gsap.set(this.transitionEl, { xPercent: 0, width: 0})
 		
-					if (typeof trigger === 'string') return;
-		
-					return gsap.to(data.current.container, {
-						opacity: 0
+					return gsap.to(this.transitionEl, {
+						width: '100vw',
+						duration: 1,
+						ease: Power2.easeInOut,
+						onComplete: () => console.log('leave complete')
 					});
 
 				},
 		
-				enter(data) {
+				enter: (data) => {
 					const { trigger } = data;
-
-					return gsap.fromTo(data.next.container, {
-						opacity: 0
-					}, {
-						opacity: 1
-					}, .3);
 				},
+
+				afterEnter: (data) => {},
 		
 				after: (data) => {
 					const { trigger } = data;
-		
-					if (typeof trigger === 'string') {
-						this.init();
-						
-						return;
-					}
-					
-					if (!trigger.classList.contains('anim-trigger')) {
-						this.init();
-					} else {
-						const { container } = data.next;
-						const body = document.querySelector('body');
-						const nav = container.querySelector('nav');
-						
-						setTimeout(() => {
-							body.classList.remove('overflow-hidden');
-							container.classList.remove('hide-children');
-							nav.classList.remove('opacity-0');
-		
-							this.init();
-						}, 350);
-					}
 
 					new Run();
-		
 					window.scrollTo(0, 0);
+					gsap.to(this.transitionEl, {
+						xPercent: 100,
+						duration: 1,
+						ease: Power2.easeInOut,
+					});
+	
 				}
 			}]
 		});

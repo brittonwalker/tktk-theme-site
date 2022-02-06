@@ -1,0 +1,8 @@
+.about {
+	&__content-wrapper {
+		@apply bg-black text-white py-14 border-b border-white;
+	}
+	&__heading {
+		@apply text-4xl tracking-tight font-extrabold sm:text-5xl md:text-6xl;
+	}
+}

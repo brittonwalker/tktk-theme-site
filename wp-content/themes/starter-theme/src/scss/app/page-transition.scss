@@ -1,0 +1,6 @@
+.page-transition {
+	@apply fixed left-0 top-0 h-screen w-0 bg-black z-50 flex justify-center items-center overflow-hidden;
+	&__loading {
+		@apply text-white text-4xl;
+	}
+}
