@@ -14,6 +14,7 @@ import Accordions from './Accordion';
 import Video from './Video';
 import CodeHighlight from './CodeHighlight';
 import ScrollAnimations from './ScrollAnimation';
+import TextLinesReveal from './TextLinesReveal';
 
 export default class Run {
 	constructor() {

@@ -2,12 +2,10 @@
  * BoilerPlate.js
  */
 
-
 class BoilerPlate {
 	constructor() {
 		this.init();
 	}
-	init() {
-	}
+	init() {}
 }
 new BoilerPlate();
