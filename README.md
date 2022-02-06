@@ -1,3 +1,3 @@
 # TKTK Site
 
-Get up and running with `npm run start`
+Get up and running with `npm install && npm run start`.
