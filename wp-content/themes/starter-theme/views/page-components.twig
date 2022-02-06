@@ -10,6 +10,25 @@
 			</div>
 		</div>
 	</div>
+	{% include 'components/section/title.twig' with { title: 'Table of Contents' } %}
+	<div class="container">
+		<div class="toc mb-28">
+			<ol class="list-decimal list-inside text-2xl">
+				<li class="mb-2"><a class="hover:border-b-2 border-black" href="#heros">Heros</a></li>
+				<li class="mb-2"><a class="hover:border-b-2 border-black" href="#modals">Modals</a></li>
+				<li class="mb-2"><a class="hover:border-b-2 border-black" href="#slideshows">Slideshows</a></li>
+				<li class="mb-2"><a class="hover:border-b-2 border-black" href="#post-tease">Post Tease</a></li>
+				<li class="mb-2"><a class="hover:border-b-2 border-black" href="#drawer">Drawer</a></li>
+				<li class="mb-2"><a class="hover:border-b-2 border-black" href="#toast">Toast</a></li>
+				<li class="mb-2"><a class="hover:border-b-2 border-black" href="#accordions">Accordions</a></li>
+				<li class="mb-2"><a class="hover:border-b-2 border-black" href="#video">Video</a></li>
+				<li class="mb-2"><a class="hover:border-b-2 border-black" href="#marquee">Marquee</a></li>
+			</ol>
+		</div>
+	</div>
+
+	{% include 'components/page-elevator/page-elevator.twig' %}
+
 	{% include 'components/section/title.twig' with { title: 'Heros' } %}
 	{% include 'components/hero/split/code.twig' %}
 	{% include 'components/hero/centered/code.twig' %}

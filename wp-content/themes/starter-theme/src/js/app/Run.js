@@ -15,6 +15,7 @@ import Video from './Video';
 import CodeHighlight from './CodeHighlight';
 import ScrollAnimations from './ScrollAnimation';
 import TextLinesReveal from './TextLinesReveal';
+import PageElevator from './PageElevator';
 
 export default class Run {
 	constructor() {
@@ -32,5 +33,6 @@ export default class Run {
 		new Banner();
 		new Modal();
 		new ScrollAnimations();
+		new PageElevator();
 	}
 }
