@@ -12,11 +12,20 @@
 	}
 	ul {
 		@apply list-inside;
-		li {
-			@apply list-disc;
-		}
+		// li {
+		// 	@apply list-disc;
+		// }
 	}
 	h2 {
 		@apply text-2xl font-bold mt-7 mb-4;
+	}
+	&__grid {
+		@apply grid grid-cols-12 gap-6
+	}
+	&__sidebar {
+		@apply col-span-12 lg:col-span-2;
+	}
+	&__content {
+		@apply col-span-12 lg:col-span-8;
 	}
 }

@@ -1,28 +1,29 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	<div class="container my-12">
-		<div class="grid grid-cols-12 gap-6">
-			<div class="col-span-2">
-				<div class="toc">
-					<div class="toc__header">
-						<p>Getting Started</p>
+	<div class="docs">
+		<div class="container my-12">
+			<div class="docs__grid">
+				<div class="docs__sidebar">
+					<div class="toc">
+						<div class="toc__header">
+							<p>Getting Started</p>
+						</div>
+						<ul>
+							<li></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
 					</div>
-					<ul>
-						<li></li>
-						<li></li>
-						<li></li>
-						<li></li>
-					</ul>
+				</div>
+				<div class="docs__content">
+					<div class="docs">
+						<h1 class="text-5xl font-bold mt-0">{{ post.title }}</h1>
+						{{ post.content }}
+					</div>
 				</div>
 			</div>
-			<div class="col-span-8">
-				<div class="docs">
-					<h1 class="text-5xl font-bold mt-0">{{ post.title }}</h1>
-					{{ post.content }}
-				</div>
-			</div>
-			<div class="col-span-2"></div>
 		</div>
 	</div>
 {% endblock %}

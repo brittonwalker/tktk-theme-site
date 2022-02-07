@@ -8,10 +8,10 @@
 		@apply container relative;
 	}
 	&__inner {
-		@apply lg:text-center px-6 lg:px-12 my-4;
+		@apply lg:text-center lg:px-12 my-4;
 	}
 	&__close {
-		@apply absolute top-0 right-[16px] lg:right-0;
+		@apply absolute top-0 right-0;
 	}
 
 	a {
