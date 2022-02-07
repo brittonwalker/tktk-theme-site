@@ -13,12 +13,18 @@ export default class Banner {
 	init() {
 		this.banners.forEach( ( banner ) => {
 			const bannerClose = banner.querySelector( '.banner__close' );
-			banner.style.height = `${ banner.offsetHeight }px`;
+			this.setHeight( banner );
 			bannerClose.addEventListener( 'click', () => this.close( banner ) );
+			window.addEventListener('resize', () => this.setHeight( banner ) );
+			
 		} );
 	}
 	close( el ) {
 		el.classList.add( 'banner--closed' );
 		el.removeAttribute( 'style' );
+	}
+	setHeight( el ) {
+		el.style.height = null;
+		el.style.height = `${ el.offsetHeight }px`;
 	}
 }
