@@ -33,7 +33,9 @@ class PageTransition {
 						width: '100vw',
 						duration: 1,
 						ease: Power2.easeInOut,
-						onComplete: () => console.log('leave complete')
+						onComplete: () => {
+							window.headerMenu.out();
+						}
 					});
 
 				},
