@@ -1,0 +1,46 @@
+.line-grid {
+	&__container {
+		@apply container;
+	}
+	&__grid {
+		@apply grid grid-cols-12;
+	}
+	&__item {
+		@apply col-span-12 lg:col-span-4 border-r;
+
+		&:first-child,
+		&:nth-child(3n + 4) {
+			.line-grid__item-inner {
+				@apply lg:pl-0;
+			}
+			&:before {
+				content: '';
+				border-color: inherit;
+				@apply absolute left-[50%] border-t w-screen transform translate-x-[-50%];
+			}
+		}
+		&:nth-child(3n) {
+			@apply lg:border-r-0;
+		}
+	}
+	&__item-inner {
+		@apply p-6;
+	}
+	&__item-title {
+		@apply text-2xl font-bold mb-2 flex;
+	}
+	&__item-text {
+		@apply mb-4;
+	}
+	&__item-link {
+		@apply flex;
+		a:hover {
+			+ svg {
+				transform: translateX(8px);
+			}
+		}
+		svg {
+			@apply ml-2 transition-transform duration-300;
+		}
+	}
+}

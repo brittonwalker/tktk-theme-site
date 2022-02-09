@@ -1288,6 +1288,63 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.5rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}.line-grid__container{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}@media (min-width: 640px){.line-grid__container{
+    max-width: 640px;
+  }
+}@media (min-width: 768px){.line-grid__container{
+    max-width: 768px;
+  }
+}@media (min-width: 1024px){.line-grid__container{
+    max-width: 1024px;
+  }
+}@media (min-width: 1280px){.line-grid__container{
+    max-width: 1280px;
+  }
+}@media (min-width: 1536px){.line-grid__container{
+    max-width: 1536px;
+  }
+}.line-grid__container{width:var(--container-width)}.line-grid__grid{
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+}.line-grid__item{
+  grid-column: span 12 / span 12;
+  border-right-width: 1px;
+}@media (min-width: 1024px){.line-grid__item{
+    grid-column: span 4 / span 4;
+  }.line-grid__item:first-child .line-grid__item-inner, .line-grid__item:nth-child(3n+4) .line-grid__item-inner{
+    padding-left: 0px;
+  }
+}.line-grid__item:first-child:before,.line-grid__item:nth-child(3n+4):before{content:"";border-color:inherit}.line-grid__item:first-child:before, .line-grid__item:nth-child(3n+4):before{
+  position: absolute;
+  left: 50%;
+  width: 100vw;
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  border-top-width: 1px;
+}@media (min-width: 1024px){.line-grid__item:nth-child(3n){
+    border-right-width: 0px;
+  }
+}.line-grid__item-inner{
+  padding: 1.5rem;
+}.line-grid__item-title{
+  margin-bottom: 0.5rem;
+  display: flex;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
+}.line-grid__item-text{
+  margin-bottom: 1rem;
+}.line-grid__item-link{
+  display: flex;
+}.line-grid__item-link a:hover+svg{transform:translateX(8px)}.line-grid__item-link svg{
+  margin-left: 0.5rem;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
 }.hover\:cursor-pointer:hover{
   cursor: pointer;
 }.hover\:border-b-2:hover{

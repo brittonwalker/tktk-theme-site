@@ -23,6 +23,7 @@
 				<li class="mb-2"><a class="hover:border-b-2 border-black" href="#accordions">Accordions</a></li>
 				<li class="mb-2"><a class="hover:border-b-2 border-black" href="#video">Video</a></li>
 				<li class="mb-2"><a class="hover:border-b-2 border-black" href="#marquee">Marquee</a></li>
+				<li class="mb-2"><a class="hover:border-b-2 border-black" href="#layouts">Layouts</a></li>
 			</ol>
 		</div>
 	</div>
@@ -52,4 +53,6 @@
 	{% include 'components/video/background/code.twig' %}
 	{% include 'components/section/title.twig' with { title: 'Marquee' } %}
 	{% include 'components/marquee/code.twig' %}
+	{% include 'components/section/title.twig' with { title: 'Layouts' } %}
+	{% include 'components/layout/line-grid/code.twig' %}
 {% endblock %}
