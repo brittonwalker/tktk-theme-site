@@ -9,7 +9,10 @@
 @import 'prismjs/themes/prism-okaidia.min.css';
 @import 'plyr';
 
-// Application Styles
+// Typography
+@import './app/typography.scss';
+
+// Component Styles
 @import './app/post-tease.scss';
 @import './app/header.scss';
 @import './app/footer.scss';

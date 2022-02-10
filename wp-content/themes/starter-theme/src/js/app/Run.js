@@ -16,6 +16,8 @@ import CodeHighlight from './CodeHighlight';
 import ScrollAnimations from './ScrollAnimation';
 import TextLinesReveal from './TextLinesReveal';
 import PageElevator from './PageElevator';
+import FadeIn from './FadeIn';
+import FadeInText from './FadeInText';
 
 export default class Run {
 	constructor() {
@@ -34,5 +36,6 @@ export default class Run {
 		new Modal();
 		new ScrollAnimations();
 		new PageElevator();
+		new FadeIn();
 	}
 }

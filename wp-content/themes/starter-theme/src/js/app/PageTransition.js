@@ -5,6 +5,7 @@
 import barba from '@barba/core';
 import Run from './Run';
 import { gsap, Power2 } from 'gsap';
+import FadeInText from './FadeInText';
 
 class PageTransition {
 	constructor() {
@@ -44,19 +45,23 @@ class PageTransition {
 					const { trigger } = data;
 				},
 
-				afterEnter: (data) => {},
+				afterEnter: (data) => {
+					gsap.to(this.transitionEl, {
+						xPercent: 100,
+						duration: 1,
+						delay: .5,
+						ease: Power2.easeInOut,
+						onComplete: () => {
+							new FadeInText();
+						}
+					});
+				},
 		
 				after: (data) => {
 					const { trigger } = data;
 
 					new Run();
 					window.scrollTo(0, 0);
-					gsap.to(this.transitionEl, {
-						xPercent: 100,
-						duration: 1,
-						ease: Power2.easeInOut,
-					});
-	
 				}
 			}]
 		});

@@ -1,0 +1,31 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<div class="hero-full bg-black text-white">
+		<div class="hero-full__bg"></div>
+		<div class="hero-full__content">
+			<div class="container">
+				<div class="fade-text-wrapper">
+					<p class="display-max fade-in-text font-bold">Welcome to</p>
+				</div>
+				<div class="fade-text-wrapper">
+					<p class="display-max fade-in-text font-bold">TKTK Theme</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="fade-in">
+	{% include 'components/hero/split/hero-split.twig' %}
+	</div>
+	<div class="fade-in">
+	{% include 'components/slideshow/left/slideshow.twig' %}
+	</div>
+	<div class="fade-in">
+	{% include 'components/tease/post-grid.twig' with { columns: 3 } %}
+	</div>
+	{# {% for post in posts %}
+		{% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
+	{% endfor %}
+	
+	{% include 'partial/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %} #}
+{% endblock %}

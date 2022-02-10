@@ -9,7 +9,7 @@ const isVisible = ( element ) => {
 	);
 };
 
-const isInViewport = ( element ) => {
+const isInViewport = ( element, threshold = 0 ) => {
 	var rect = element.getBoundingClientRect();
 
 	const windowHeight =
@@ -17,7 +17,7 @@ const isInViewport = ( element ) => {
 	const windowWidth =
 		window.innerWidth || document.documentElement.clientWidth;
 
-	const vertInView = rect.top <= windowHeight && rect.top + rect.height >= 0;
+	const vertInView = rect.top + threshold <= windowHeight && rect.top + rect.height >= 0;
 	const horInView = rect.left <= windowWidth && rect.left + rect.width >= 0;
 
 	return vertInView && horInView;

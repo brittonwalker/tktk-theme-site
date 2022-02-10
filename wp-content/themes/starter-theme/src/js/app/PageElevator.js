@@ -17,7 +17,6 @@ export default class PageElevator {
 		this.el.addEventListener('click', () => this.scrollToTop());
 	}
 	setArrowPosition() {
-		console.log('setting')
 		const container = document.querySelector('.container');
 		const { right } = container.getBoundingClientRect()
 		const { width }= this.el.getBoundingClientRect();
