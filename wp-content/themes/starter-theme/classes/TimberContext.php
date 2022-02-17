@@ -19,6 +19,7 @@ class TimberContext {
 
 		$context['menu'] = array(
 			'primary' => new Timber\Menu( 'Primary Navigation' ),
+			'sample' => new Timber\Menu( 'Sample Navigation' ),
 		);
 
 		return $context;

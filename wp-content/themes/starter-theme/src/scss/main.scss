@@ -40,3 +40,7 @@
 @import './app/page-about.scss';
 @import './app/page-transition.scss';
 @import './app/line-grid.scss';
+
+.sample {
+	@apply bg-black text-white rounded-2xl min-h-[200px] flex justify-center items-center text-2xl transition-colors duration-300 hover:bg-gray-900;
+}
