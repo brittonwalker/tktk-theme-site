@@ -1,10 +1,6 @@
 module.exports = {
   mode: 'jit',
-  content: [
-    './views/*.twig',
-    './views/**/*.twig',
-    './svg/**/*.twig',
-  ],
+  content: ['./views/*.twig', './views/**/*.twig', './svg/**/*.twig'],
   theme: {
     extend: {},
     container: {
@@ -12,4 +8,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};

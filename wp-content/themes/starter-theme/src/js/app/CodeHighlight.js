@@ -10,10 +10,12 @@ import 'prismjs/components/prism-scss';
 import 'prismjs/components/prism-twig';
 
 export default class CodeHighlight {
-	constructor() {
-		this.init();
-	}
-	init() {
-		Prism.highlightAll();
-	}
+  constructor() {
+    this.init();
+  }
+
+  // eslint-disable-next-line class-methods-use-this
+  init() {
+    Prism.highlightAll();
+  }
 }

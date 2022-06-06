@@ -3,9 +3,10 @@
  */
 
 class BoilerPlate {
-	constructor() {
-		this.init();
-	}
-	init() {}
+  constructor() {
+    this.init();
+  }
+
+  init() {}
 }
 new BoilerPlate();
