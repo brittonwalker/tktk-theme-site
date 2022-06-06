@@ -1,7 +1,7 @@
 {
   "name": "wp-starter-theme",
   "version": "1.0.0",
-  "description": "<!DOCTYPE html> <html lang=\"en\"> <head> \t<meta name=\"viewport\" content=\"width=device-width\" /> \t<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\" /> \t<title>WordPress &#8250; ReadMe</title> \t<link rel=\"stylesheet\" href=\"wp-admin/css/install.css?ver=20100228\" type=\"text/css\" /> </head> <body> <h1 id=\"logo\"> \t<a href=\"https://wordpress.org/\"><img alt=\"WordPress\" src=\"wp-admin/images/wordpress-logo.png\" /></a> </h1> <p style=\"text-align: center\">Semantic Personal Publishing Platform</p>",
+  "description": "Starter development theme for WordPress",
   "main": "index.js",
   "scripts": {
     "build": "wp-scripts build src/index.js src/editor.js",
@@ -32,7 +32,9 @@
   },
   "homepage": "https://github.com/brittonwalker/wp-starter-theme#readme",
   "devDependencies": {
-    "@wordpress/scripts": "^19.2.3",
+    "@athletics/eslint-config": "^1.0.13",
+    "@wordpress/scripts": "^23.2.0",
+    "eslint": "^8.17.0",
     "gsap": "^3.9.1",
     "headroom.js": "^0.12.0",
     "plyr": "^3.6.12",
